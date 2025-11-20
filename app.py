@@ -14,7 +14,7 @@ products = [
 
 @app.route("/")
 def home():
-    return "Hello"
+    return jsonify({"message":"Welcome"}), 200
 
 
 # TODO: Implement GET /products route that returns all products or filters by category
